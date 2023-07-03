@@ -1,8 +1,7 @@
 
 import './App.css'
-import Demo from './components/Demo'
-import Hero from './components/Hero'
-
+import { RouterProvider, } from "react-router-dom";
+import { router } from './routes/routes'
 function App() {
   return (
     <main>
@@ -11,8 +10,7 @@ function App() {
       </div>
 
       <div className='app'>
-        <Hero />
-        <Demo />
+        <RouterProvider router={ router} />
       </div>
     </main>
   )
